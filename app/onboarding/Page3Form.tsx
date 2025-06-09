@@ -20,7 +20,7 @@ export default function Page3Form() {
   const handleSubmit = async () => {
     if (name && email.includes('@')) {
       await saveProfile({ name, email });
-      router.replace('/home');
+      router.replace('/tabs/home');
     } else {
       Alert.alert('Invalid Input', 'Please enter a valid name and email.');
     }

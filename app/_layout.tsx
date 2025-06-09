@@ -1,18 +1,5 @@
-import { Stack } from 'expo-router';
-import { StatusBar } from 'expo-status-bar';
-
+import { Slot } from 'expo-router';
 
 export default function Layout() {
-  return (
-    <>
-      <StatusBar style="light" />
-      <Stack
-        screenOptions={{
-          headerShown: false, // sembunyikan top bar
-        }}
-      />
-
-      
-    </>
-  );
+  return <Slot />;
 }
