@@ -1,7 +1,3 @@
-// ✅ Perbaikan utama:
-// Ganti ScrollView utama karena FlatList tidak boleh nested di dalam ScrollView dengan orientasi sama
-// Solusi: pindahkan header + chip ke ListHeaderComponent milik FlatList
-
 import React, { useEffect, useState } from 'react';
 import {
   FlatList,
@@ -11,6 +7,8 @@ import {
   TextInput,
   View
 } from 'react-native';
+
+
 import { fetchMenuItems, MenuItem } from '../../utils/api'; // pastikan path benar
 
 export default function HomeScreen() {
